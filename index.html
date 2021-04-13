@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Sugar Glass</title>
+
+  <style>
+
+    header{
+    background: url(images/sgthing.gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+  }
+
+  @media screen and (max-width: 670px){
+    header{
+      min-height:500px;
+    }
+  }
+    .section{
+      padding-top:4vw; /*size in relation to the viewport*/
+      padding-bottom:vw;
+    }
+
+   /*optional tabs customization*/
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+
+    #logo{
+      max-height:75px;
+      max-width:75px;
+      margin:20px;
+    }
+
+
+   
+</style>
+</head>
+<body>
+    <!-- navbar -->
+  <header>
+<nav class="nav-wrapper transparent">
+
+<div class="container">
+  <a href="" class="brand-logo">Sugar Glass</a>
+
+  <a href="" class="sidenav-trigger" data-target="mobile-menu">
+  <i class="material-icons">menu</i>
+  </a>
+  
+  <ul class="right hide-on-med-and-down">
+    <li><a href="#services">About</a></li>
+    <li><a href="#photos">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!--social icons-->
+    <li>
+      <a href="" class="tooltipped btn-floating btn-small pink lighten-3" data-tooltip="bandcamp">
+      <i class="fab fa-bandcamp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="" class="tooltipped btn-floating btn-small pink lighten-3"  data-tooltip="soundcloud">
+      <i class="fab fa-soundcloud"></i>
+      </a>
+    </li>
+    <li>
+      <a href="" class="tooltipped btn-floating btn-small pink lighten-3"  data-tooltip="youtube">
+      <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+    <li>
+      <a href="" class="tooltipped btn-floating btn-small pink lighten-3"  data-tooltip="vimeo">
+      <i class="fab fa-vimeo"></i>
+      </a>
+    </li>
+    <img src="images/logopink.png" class="prefix responsive-img" id="logo" alt="">
+  </ul>
+
+  
+
+  <!--mobile menu-->
+  <ul class="sidenav pink lighten-5" id="mobile-menu">
+    <li><a href="" class="grey-text">About</a></li>
+    <li><a href="" class="grey-text">Portfolio</a></li>
+    <li><a href="" class="grey-text">Contact</a></li>
+  </ul>
+  
+</div>
+</nav>
+  </header>
+
+   <!-- parallax -->
+   <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/DSC_0157.JPG" alt="" class="responsive-img">
+    </div>
+  </div>
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+
+    <!--row 1-->
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="images/logo.png" alt="" class="responsive-img materialboxed"> <!--material box in jquery-->
+     </div>
+     <div class="col s12 l6"> <!--offests by one column on large screens-->
+       <h2 class="pink-text text-lighten-3">Shows</h2>
+       <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+     </div>
+    </div>
+
+     <!--row 2-->
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="images/SFEP.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l4 right-align"> 
+        <h2 class="pink-text text-lighten-3">EP Release</h2>
+        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+
+    <!--row 3-->
+  <div class="row">
+    <div class="col s12 l4">
+      <img src="images/Stat1.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 push-l1">
+      <h2 class="pink-text text-lighten-3">Videos</h2>
+      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+  
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/DSC_0047copy.JPG" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+<section class="container section scrollspy" id="services">
+<div class="row">
+  <div class="col s12 l4">
+    <h2 class="pink-text text-lighten-3">What I do</h2>
+    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p class="grey-text">Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+  </div>
+  <!--tabs-->
+  <div class="col s12 l6 offset-l2">
+    <ul class="tabs">
+      <li class="tab col s6">
+        <a href="#shows" class="pink-text">Shows</a>
+      </li>
+      <li class="tab col s6">
+        <a href="#videos" class="pink-text">Videos</a>
+      </li>
+    </ul>
+
+    <!--tab content-->
+    <div class="col s12" id="shows">
+      <p class="flow-text grey-text">SHOWS</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+    <div class="col s12" id="videos">
+      <p class="flow-text grey-text">Videos</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+   <!-- parallax -->
+   <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/DSC_0152.JPG" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact"></section>
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="pink-text text-lighten-3">Get in Touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+
+      <!--email-->
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field" style="color:pink lighten-3">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email"> <!--in materialize, labels need to be under the inputs-->
+            <label for="email">Your Email</label>
+          </div>
+
+        <!--message field-->
+    <div class="input-field">
+      <i class="material-icons prefix">message</i>
+      <textarea name="" id="message" class="materialize-textarea"></textarea> <!--need text area class-->
+      <label for="message">Your Message</label>
+    </div>
+        </form>
+      </div>
+    </div>
+
+  <!-- footer -->
+<footer class="page-footer grey darken-1">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6">
+        <h5>About Me</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>  
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="" class="grey-text text-lighten-3">Soundcloud</a></li>
+          <li><a href="" class="grey-text text-lighten-3">Bandcamp</a></li>
+          <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+          <li><a href="" class="grey-text text-lighten-3">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">&copy; 2021 Sugar Glass</div>
+    
+  </div>
+</footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+$('.sidenav').sidenav();
+$('.materialboxed').materialbox();
+$('.parallax').parallax();
+$('.tabs').tabs();
+$('.tooltipped').tooltip();
+$('.scrollspy').scrollSpy();    });
+  </script>
+</body>
+</html>
